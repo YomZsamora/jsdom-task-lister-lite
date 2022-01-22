@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+	submitTask();
+});
+
+let submitTask = () => {
 	let taskList = document.getElementById('tasks');
 	let taskEntry = document.getElementById('create-task-form');
-
 	taskEntry.onsubmit = (e) => {
 		e.preventDefault(); 
 		let newTaskDescription = document.getElementById('new-task-description').value;
@@ -10,8 +13,4 @@ document.addEventListener("DOMContentLoaded", () => {
 		taskList.appendChild(entry);
 		taskEntry.reset()
 	}
-
-	taskList.onclick = () => {
-
-	}
-});
+}
