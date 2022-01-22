@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	submitTask();
 });
 
+// Handles an event in a form based on clicking a submit button.
 let submitTask = () => {
 	let taskList = document.getElementById('tasks');
 	let taskEntry = document.getElementById('create-task-form');
